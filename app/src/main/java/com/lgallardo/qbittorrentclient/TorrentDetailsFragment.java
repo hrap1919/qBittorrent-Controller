@@ -299,6 +299,9 @@ public class TorrentDetailsFragment extends Fragment {
             sequentialDownloadCheckBox = (CheckBox) rootView.findViewById(R.id.torrentSequentialDownload);
             firstLAstPiecePrioCheckBox = (CheckBox) rootView.findViewById(R.id.torrentFirstLastPiecePrio);
 
+            sequentialDownloadCheckBox.setChecked(this.torrent.isSeq_dl());
+            firstLAstPiecePrioCheckBox.setChecked(this.torrent.isF_l_piece_prio());
+
             TextView addedOnTextView = (TextView) rootView.findViewById(R.id.torrentAddedOn);
             TextView completionOnTextView = (TextView) rootView.findViewById(R.id.torrentCompletionOn);
             TextView categoryTextView = (TextView) rootView.findViewById(R.id.torrentCategory);
@@ -837,6 +840,9 @@ public class TorrentDetailsFragment extends Fragment {
 
             sequentialDownloadCheckBox = (CheckBox) rootView.findViewById(R.id.torrentSequentialDownload);
             firstLAstPiecePrioCheckBox = (CheckBox) rootView.findViewById(R.id.torrentFirstLastPiecePrio);
+
+            sequentialDownloadCheckBox.setChecked(this.torrent.isSeq_dl());
+            firstLAstPiecePrioCheckBox.setChecked(this.torrent.isF_l_piece_prio());
 
             TextView addedOnTextView = (TextView) rootView.findViewById(R.id.torrentAddedOn);
             TextView completionOnTextView = (TextView) rootView.findViewById(R.id.torrentCompletionOn);

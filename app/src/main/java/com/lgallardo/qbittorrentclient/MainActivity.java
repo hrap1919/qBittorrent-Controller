@@ -3640,6 +3640,13 @@
 
                      progressInfo = Common.ProgressForUi(progress);
 
+                     boolean seqdl = torrents.get(i).isSeq_dl();
+                     torrents.get(i).setSeq_dl(seqdl);
+
+                     boolean Flpieceprio = torrents.get(i).isF_l_piece_prio();
+                     torrents.get(i).setF_l_piece_prio(Flpieceprio);
+
+
 //                    Log.d("Debug", "[getTorrentList] progress: " + (progress * 100));
 //                    Log.d("Debug", "[getTorrentList] progress fixed: " + progressInfo);
 //                    Log.d("Debug", "[getTorrentList] torrent state: " + torrents.get(i).getState());
